@@ -1,8 +1,10 @@
 import org.assertj.core.api.Assertions;
+import org.junit.Ignore;
 import org.junit.Test;
 
 public class StupidTest {
     @Test
+    @Ignore
     public void testWillFail() throws InterruptedException {
         System.out.println("Testing...");
 
