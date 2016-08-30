@@ -10,7 +10,7 @@ node {
         sendStatus('success')
         currentBuild.result = 'SUCCESS'
     } catch(error) {
-        sendStatus('failure')
+        sendStatus('failed')
         currentBuild.result = 'FAILURE'
     }
 }
