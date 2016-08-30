@@ -16,5 +16,5 @@ node {
 }
 
 def sendStatus(status) {
-    build job: 'send-build-status', parameters: [[$class: 'StringParameterValue', name: 'build', value: 'project1'], [$class: 'StringParameterValue', name: 'status', value: '${status}']]
+    build job: 'send-build-status', parameters: [[$class: 'StringParameterValue', name: 'build', value: 'project1'], [$class: 'StringParameterValue', name: 'status', value: status]]
 }
