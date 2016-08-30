@@ -4,6 +4,8 @@ node {
     sendStatus('started')
     try {
         checkout scm
+        env.JAVA_HOME = "${tool 'jdk8'}"
+        env.PATH = "${env.JAVA_HOME}/bin:${env.PATH}"
         sh "./gradlew --stacktrace clean test"
     } catch(error) {
         sendStatus('failure')
