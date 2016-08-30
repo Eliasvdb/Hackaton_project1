@@ -4,7 +4,7 @@ import org.junit.Test;
 
 public class StupidTest {
     @Test
-    @Ignore
+//    @Ignore
     public void testWillFail() throws InterruptedException {
         System.out.println("Testing...");
 
